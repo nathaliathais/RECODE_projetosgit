@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Full Stack Eletro</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!--link css-->
+    <script src="js/funçoes.js"></script>
+</head>
+
+<body>
+    <!-- Início do menu -->
+    <nav class="menu">
+        <a href="index.html"><img width="100px" src="./imagens/img.logo.PNG" alt="Full stack Eletro"></a>
+        <a href="produtos.html">Produtos</a>
+        <a href="lojas.html">Nossas lojas</a>
+        <a href="contato.html">Fale conosco</a>
+    </nav>
+    <!-- Fim do menu -->
+    <header>
+        <h1>Produtos</h1>
+        <hr>
+    </header>
+
+
+    <div class="categorias">
+        <h2>Categorias</h2>
+        <ul>
+            <li class="lista" onclick="exibir_todos()">Todos (14)</li><br />
+            <li class="lista" onclick="exibir_categoria('geladeiras')">Geladeiras (3)</li><br />
+            <li class="lista" onclick="exibir_categoria('fogoes')">Fogões (2)</li><br />
+            <li class="lista" onclick="exibir_categoria('microondas')">Microondas (3)</li><br />
+            <li class="lista" onclick="exibir_categoria('lavaroupas')">Lavadoras de roupas (2)</li><br />
+            <li class="lista" onclick="exibir_categoria('lavalouças')">Lava-louças (2)</li><br />
+            <li class="lista" onclick="exibir_categoria('televisores')">Televisores (1)</li><br />
+            <li class="lista" onclick="exibir_categoria('videogames')">Video-games (1)</li><br />
+        </ul>
+    </div>
+
+    <section class="produto">
+        <!--Geladeiras-->
+        <div class="box_produto" id="geladeiras" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/geladeira.jpg"
+                alt="Geladeira Frost Free Brastemp Side Inverse 540 litros" style="width: 120px"
+                onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Geladeira Frost Free Brastemp Side Inverse 540 litros</p>
+            <hr>
+            <p class="precoAntigo">R$ 4.199,99</p>
+            <p class="precoAtual">R$ 3.389,99</p><br />
+        </div>
+
+        <div class="box_produto" id="geladeiras" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/geladeira_2.png"
+                alt="Geladeira/Refrigerador Electrolux Frost Free Inox - French Door 579L" style="width: 60px"
+                onclick="aumentarProdutos(this)">
+            <br>
+            <p class="nomeProdutos">Geladeira/Refrigerador Electrolux Frost Free Inox - French Door 579L</p>
+            <hr>
+            <p class="precoAntigo">R$ R$ 5.949,99</p>
+            <p class="precoAtual">R$ 4.949,10</p><br />
+        </div>
+
+        <div class="box_produto" id="geladeiras" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/geladeira_3.png"
+                alt="Geladeira Brastemp Frost Free Duplex 500 litros Branca com Turbo Control 110V" style="width: 120px"
+                onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Geladeira Brastemp Frost Free Duplex 500 litros Branca com Turbo Control 110V </p>
+            <hr>
+            <p class="precoAntigo">R$ 4068,10</p>
+            <p class="precoAtual">R$ 3.068,10</p><br />
+        </div>
+
+
+        <!--Fogões-->
+        <div class="box_produto" id="fogoes" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/fogao.jpg" alt="Fogão de Piso 4 Bocas Cinza Brastemp - Bivolt"
+                style="width: 120px" onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Fogão de Piso 4 Bocas Cinza Brastemp - Bivolt</p>
+            <hr>
+            <p class="precoAntigo">R$ 1.900,00</p>
+            <p class="precoAtual">R$ 990,00</p><br />
+        </div>
+
+        <div class="box_produto" id="fogoes" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/fogao_2.png"
+                alt="Fogão Electrolux 4 Bocas 52LBU Vidro Interno Removível – Branco" style="width: 120px"
+                onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Fogão Electrolux 4 Bocas 52LBU Vidro Interno Removível – Branco</p>
+            <hr>
+            <p class="precoAntigo">R$ 1.000,00</p>
+            <p class="precoAtual">R$ 809,10</p><br />
+        </div>
+
+        <!--Microondas-->
+        <div class="box_produto" id="microondas" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/microondas1.png" alt="Microondas Philco PMS24 20 Litros"
+                style="width: 120px" onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Microondas Philco PMS24 20 Litros</p>
+            <hr>
+            <p class="precoAntigo">R$ 499,00</p>
+            <p class="precoAtual">R$ 399,00</p><br />
+        </div>
+
+        <div class="box_produto" id="microondas" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/microondas2.png" alt="Microondas Philco PME25 25 Litros"
+                style="width: 120px" onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Microondas Philco PME25 25 Litros</p>
+            <hr>
+            <p class="precoAntigo">R$ 625,10</p>
+            <p class="precoAtual">R$ 499,99</p><br />
+        </div>
+
+        <div class="box_produto" id="microondas" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/microondas3.png"
+                alt="Micro-ondas Brastemp Espelhado Grill 32 Litros - BMG45 110v" style="width: 120px"
+                onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Micro-ondas Brastemp Espelhado Grill 32 Litros - BMG45 110v</p>
+            <hr>
+            <p class="precoAntigo">R$ 999,99</p>
+            <p class="precoAtual">R$ 849,99</p><br />
+        </div>
+
+        <!--Lavadoras de roupas-->
+        <div class="box_produto" id="lavaroupas" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/lavadora_roupa.jpg" alt="Máquina de lavar Brastemp - 15 kg"
+                style="width: 120px" onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Máquina de lavar Brastemp - 15 kg</p>
+            <hr>
+            <p class="precoAntigo">R$ 2.709,00</p>
+            <p class="precoAtual">R$ 2.103,66</p><br />
+        </div>
+
+        <div class="box_produto" id="lavaroupas" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/maquina_consul.png" alt="Máquina de lavar Consul - 10 kg"
+                style="width: 120px" onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Máquina de lavar Consul - 10 kg</p>
+            <hr>
+            <p class="precoAntigo">R$ 2.590,66</p>
+            <p class="precoAtual">R$ 2.100,00</p><br />
+        </div>
+
+        <!--Lava-louças-->
+        <div class="box_produto" id="lavalouças" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/lavadoralouça_brastemp.png"
+                alt="Lava-Louças Electrolux, 10 Serviços, Painel Blue Touch, Inox - LV10X" style="width: 60px"
+                onclick="aumentarProdutos(this)">
+            <br />
+            <p class="nomeProdutos">Lava-Louças Electrolux, 10 Serviços, Painel Blue Touch, Inox - LV10X</p>
+            <hr>
+            <p class="precoAntigo">R$ 4.100,00</p>
+            <p class="precoAtual">R$ 3.000,00</p><br />
+        </div>
+
+        <div class="box_produto" id="lavalouças" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/lavadoralouça_brastemp2.png"
+                alt="Lava-Louças Electrolux 8 Serviços Cinza (LE08S)" style="width: 120px" onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Lava-Louças Electrolux 8 Serviços Cinza (LE08S)</p>
+            <hr>
+            <p class="precoAntigo">R$ 3.299,00</p>
+            <p class="precoAtual">R$ 2.799,00</p><br />
+        </div>
+
+        <!--Televisores-->
+        <div class="box_produto" id="televisores" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/televisao.png" alt="Smart TV 50 Crystal UHD 4K TU8000"
+                style="width: 120px" onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Smart TV 50" Crystal UHD 4K TU8000</p>
+            <hr>
+            <p class="precoAntigo">R$4.299,00</p>
+            <p class="precoAtual">R$ 3.429,00</p><br />
+        </div>
+
+        <!-- Video games -->
+        <div class="box_produto" id="videogames" style="display: inline-block;">
+            <img class="imagemProduto" src="imagens/video_gameps5.jpg" alt="Playstation 5" style="width: 120px"
+                onclick="destaque(this)">
+            <br />
+            <p class="nomeProdutos">Playstation 5</p>
+            <hr>
+            <p class="precoAntigo">R$5.899,00</p>
+            <p class="precoAtual">R$ 4.799,00</p><br />
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p id="formasPagamento">Formas de pagamento</p>
+        <img width="400px" src="./imagens/bandeira_cartoes.png" alt="Formas de pagamento">
+        <p>&copy; Recode Pro</p>
+    </footer>
+</body>
+
+</html>
