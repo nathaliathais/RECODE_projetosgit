@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: left;
+    padding: 20px, 10px;
+    margin-right: 197px;
+}
+
+.menu {
+    background-color: rgb(255, 0, 0); 
+    padding: 15px;
+}
+
+#formasPagamento {
+    font-size: 2;
+    font-style: bold;
+    color: rgb(255, 0, 0);
+
+}
+.precoAntigo {
+    font-size: 2;
+    text-decoration: line-through;
+}
+
+.nomeProdutos { 
+    font-stretch: condensed;
+    word-wrap: break-word;
+}
+
+.precoAtual {
+    font-size: 4;
+    color: rgb(255, 0, 0);
+    font-style: bold;
+}
+
+.box_produto {
+    display: inline-block;
+    margin: 12px, 0px, 0px, 32px;
+    width: 20%;
+    
+}
+
+.categorias {
+    display: inline-block;
+    width: 20%;
+    height: 1220px;
+    vertical-align: bottom;
+}
+
+.produto {
+ display: inline-block;
+ height: 1000px;
+ width: 79%;
+ 
+}
+
+.nomeProdutos {
+   font-size: 2;
+}
+
+.rodape {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
