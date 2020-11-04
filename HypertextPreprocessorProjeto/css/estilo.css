@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;  
+    background-color: rgb(255, 251, 247);
+}
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: left;
+    font-style: bold;
+    padding: 20px, 10px;
+    margin-right: 197px;
+}
+.menu {
+    background-color: rgb(255, 0, 0); 
+    padding: 15px;
+}
+#formasPagamento {
+    font-size: 2;
+    font-style: bold;
+    color: rgb(255, 0, 0);
+}
+.precoAntigo {
+    font-size: 2;
+    text-decoration: line-through;
+}
+.nomeProdutos { 
+    font-stretch: condensed;
+    word-wrap: break-word;
+}
+.precoAtual {
+    font-size: 4;
+    color: rgb(255, 0, 0);
+    font-style: bold;
+}
+.box_produto {
+    display: inline-block;
+    margin: 12px, 0px, 0px, 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 15%;      
+}
+
+.categorias {
+    display: inline-block;
+    width: 20%;
+    height: 1800px;
+    vertical-align: bottom;
+    
+}
+.produto {
+ display: inline-block;
+ margin:30,30,30,30;
+ height: 1800px;
+ width: 79%;
+ vertical-align: top;
+ 
+}
+
+.nomeProdutos {
+   font-size: 2;
+}
+
+.imagemProduto {
+ width: 120px;
+ cursor: pointer;
+}
+.endereçoLojas {
+    width: 100%;
+}
+.blocoLojas {
+    display: inline-block;
+    width: 33%; 
+}
+.lista {
+    cursor: pointer;
+}
+.estiloContato {
+    width: 100%;
+   
+}
+.blocoContato {
+    padding-left: 20%;
+    text-align: center;
+    display: inline-block;
+}
+.iconContato {
+    width: 40px;
+}
+.rodape {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: bold;
+}
